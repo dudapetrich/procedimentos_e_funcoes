@@ -1,0 +1,23 @@
+<?php 
+
+//2. Faça uma função que calcule a hipotenusa. Os catetos são os dados de entrada e a hipotenusa é o dado de saída.
+//hipotenusa = âˆšcatetoA 2 + âˆšcatetoB 2
+
+function hipotenusa ($cat1, $cat2){
+
+    $hip = sqrt($cat1**2 + $cat2**2);
+
+    return $hip;
+
+}
+
+
+print "Qual o valor do primeiro cateto? \n";
+$cat1 = (float) fgets (STDIN);
+
+print "Qual o valor do segundo cateto? \n";
+$cat2 = (float) fgets (STDIN);
+
+$hip = hipotenusa ($cat1, $cat2);
+
+print "O valor da hipotenusa entÃ£o serÃ¡ $hip";
